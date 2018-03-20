@@ -2057,10 +2057,10 @@ class Image(object):
 
         # preserve aspect ratio
         x, y = self.size
-        if x > size[0]:
+        if str(x) > size[0]:
             y = int(max(y * size[0] / x, 1))
             x = int(size[0])
-        if y > size[1]:
+        if str(y) > size[1]:
             x = int(max(x * size[1] / y, 1))
             y = int(size[1])
         size = x, y
